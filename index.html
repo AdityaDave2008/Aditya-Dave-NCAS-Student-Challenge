@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Aditya Dave">
+  <meta name="description" content="Aditya Dave’s NCAS career portfolio on testing electronics for spacecraft instruments.">
+  <title>Aditya Dave NCAS Student Challenge Career Portfolio</title>
+  <style>
+:root { color-scheme: light; --ink: #202b30; --muted: #526268; --accent: #175e61; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #fff; color: var(--ink); font: 17px/1.65 Arial, Helvetica, sans-serif; }
+.layout { max-width: 1060px; margin: auto; padding: 64px 36px 88px; display: grid; grid-template-columns: 160px minmax(0, 680px); gap: 0 70px; justify-content: center; }
+header { grid-column: 2; grid-row: 1; margin-bottom: 46px; }
+main { grid-column: 2; grid-row: 2; min-width: 0; }
+h1, h2, h3, p { margin: 0; }
+h1, h2 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; }
+h1 { font-size: clamp(48px, 7vw, 76px); letter-spacing: -.055em; line-height: 1.04; }
+h2 { margin-bottom: 14px; font-size: 32px; letter-spacing: -.035em; line-height: 1.15; }
+h3 { margin: 23px 0 5px; font-size: 20px; line-height: 1.3; }
+p + p { margin-top: 10px; }
+a { color: var(--accent); text-underline-offset: .18em; overflow-wrap: anywhere; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.skip { position: absolute; left: 12px; top: -70px; background: white; }
+.skip:focus { top: 8px; }
+.kicker, .nav-title { color: var(--accent); font-weight: 700; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; }
+.kicker { margin: 0 0 12px; }
+.dek { margin-top: 12px; font-size: 22px; line-height: 1.35; }
+.meta, .sub, .rcontact, .rrole span { color: var(--muted); }
+.meta { margin-top: 4px; font-size: 15px; }
+nav { grid-column: 1; grid-row: 1 / 3; position: sticky; top: 38px; align-self: start; font-size: 15px; }
+.nav-title { margin: 3px 0 13px; }
+.nav-links { display: grid; gap: 6px; }
+nav a { color: var(--muted); text-decoration: none; width: fit-content; padding: 2px 0; }
+nav a:hover, nav a[aria-current] { color: var(--accent); text-decoration: underline; }
+nav button { margin-top: 22px; padding: 7px 11px; background: white; color: var(--accent); border: 1px solid #b8cecc; border-radius: 5px; font: inherit; cursor: pointer; }
+nav button:hover { background: #f0f6f5; }
+section { margin-bottom: 48px; scroll-margin-top: 28px; }
+.project h3 { margin-top: 0; }
+.sub { font-size: 14px; margin: 4px 0 12px; }
+.link { font-size: 15px; }
+sup { font-size: .72em; line-height: 0; }
+sup a { text-decoration: none; }
+sup a:hover { text-decoration: underline; }
+ul { margin: 0; padding-left: 21px; }
+li + li { margin-top: 10px; }
+li::marker { color: var(--accent); }
+.resume { font-size: 15px; line-height: 1.48; }
+.rname { margin-bottom: 4px; font: 700 32px/1.2 Arial, Helvetica, sans-serif; letter-spacing: -.035em; bookmark-label: "Résumé"; }
+.resume h3 { margin: 20px 0 5px; font-size: 18px; }
+.resume p + p { margin-top: 4px; }
+.resume .rrole { margin: 13px 0 1px; }
+.resume h3 + .rrole { margin-top: 0; }
+.rcontact, .rrole span { font-size: 14px; }
+.ref, #ai-use { font-size: 15px; }
+.ref { margin: 0 0 13px; }
+.ref a { font-size: 14px; }
+.refs-list { margin-top: 22px; }
+@media screen and (max-width: 840px) {
+  .layout { display: block; max-width: 720px; padding: 32px 22px 54px; }
+  header { margin-bottom: 22px; }
+  nav { position: static; margin-bottom: 34px; }
+  .nav-title { display: none; }
+  .nav-links { display: flex; flex-wrap: wrap; gap: 4px 16px; }
+  nav button { margin-top: 12px; }
+  h2 { font-size: 28px; }
+  section { margin-bottom: 38px; }
+}
+@page { size: Letter; margin: .53in .70in .54in; }
+@media print {
+  body { font-size: 15px; line-height: 1.5; }
+  .layout { display: block; max-width: 682px; margin: auto; padding: 0; }
+  nav, .skip { display: none; }
+  header { margin-bottom: 24px; }
+  .kicker { margin-bottom: 6px; }
+  h1 { font-size: 40px; }
+  .dek { font-size: 17px; margin-top: 6px; }
+  .meta, .sub { font-size: 13px; }
+  h2 { font-size: 25px; margin-bottom: 10px; }
+  h3 { font-size: 18px; margin-top: 14px; }
+  section { margin: 0 0 25px; }
+  .print-page + .print-page { break-before: page; }
+  h2, h3, .rrole { break-after: avoid; }
+  li, .ref { break-inside: avoid; }
+  .resume { font-size: 13.5px; line-height: 1.32; margin: 0; }
+  .resume .rname { font-size: 27px; }
+  .resume h3 { font-size: 16px; margin: 10px 0 3px; }
+  .resume p + p { margin-top: 3px; }
+  .resume .rrole { margin-top: 7px; }
+  .rcontact, .rrole span { font-size: 12.5px; }
+  .ref, #ai-use { font-size: 14px; }
+  .ref a { font-size: 13px; }
+}
+  </style>
+</head>
+<body>
+<a class="skip" href="#portfolio">Skip to portfolio</a>
+<div class="layout">
+      <header id="header" aria-labelledby="header-heading">
+        <p class="kicker">NCAS Student Challenge Career Portfolio</p>
+        <h1 id="header-heading">Aditya Dave</h1>
+        <p class="dek">Electrical and computer engineering</p>
+        <p class="meta">De Anza College and Ohlone College · Fall 2027 transfer goal</p>
+      </header>
+  <nav aria-label="Portfolio sections">
+    <p class="nav-title">On this page</p>
+    <div class="nav-links">
+      <a href="#summary">Summary</a>
+      <a href="#lightsaber">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#pathway">Career pathway</a>
+      <a href="#resume">Résumé</a>
+      <a href="#references">References</a>
+    </div>
+    <button type="button" id="print" hidden>Print / save PDF</button>
+  </nav>
+  <main id="portfolio">
+    <div class="print-page">
+      <section id="summary" aria-labelledby="summary-heading">
+        <h2 id="summary-heading">Executive summary</h2>
+        <p>When my lightsaber’s LEDs acted up, I checked the wiring in the handle and changed the code. I liked figuring out why a device I built wasn’t working.</p>
+        <p>I’m studying electrical and computer engineering at De Anza and Ohlone Colleges. In physics, I trace how current moves through circuits. For my linear algebra honors project, I calculated three voltages two ways and checked the current at each junction.&nbsp;<sup><a href="#ref-1" aria-label="Reference 1">[1]</a></sup></p>
+        <p>I want to be an electronics engineer who tests circuit boards for spacecraft instruments. Through NCAS, I learned how engineers at NASA Armstrong test flight hardware and software together.&nbsp;<sup><a href="#ref-2" aria-label="Reference 2">[2]</a></sup>&nbsp;<sup><a href="#ref-3" aria-label="Reference 3">[3]</a></sup>&nbsp;<sup><a href="#ref-4" aria-label="Reference 4">[4]</a></sup> I plan to transfer in fall 2027 and expect to finish my bachelor’s degree in May 2029.&nbsp;<sup><a href="#ref-5" aria-label="Reference 5">[5]</a></sup></p>
+      </section>
+      <section id="lightsaber" class="project" aria-labelledby="lightsaber-heading">
+        <h2 id="lightsaber-heading">Projects and experiences</h2>
+        <h3>A lightsaber with a 3D-printed hilt</h3>
+        <p class="sub">Personal build · June 2026 · Arduino Nano and FreeCAD</p>
+        <p><strong>What I did.</strong> I designed a modular hilt in FreeCAD and 3D-printed it. I fit an Arduino Nano and a kill switch into the handle, then checked the wiring and code until the NeoPixel blade lit up. I plan to add motion-triggered effects in the next revision.&nbsp;<sup><a href="#ref-5" aria-label="Reference 5">[5]</a></sup></p>
+        <p><strong>NASA connection.</strong> At NASA Armstrong, engineers test a flight computer with the hardware it controls. With my lightsaber, a bad command and a power problem could look the same from outside the hilt. Checking the code alone wouldn’t tell me which one to fix.&nbsp;<sup><a href="#ref-3" aria-label="Reference 3">[3]</a></sup></p>
+      </section>
+    </div>
+    <div class="print-page">
+      <section id="research" class="project" aria-labelledby="research-heading">
+        <h3 id="research-heading">Getting readings from a device into an app</h3>
+        <p class="sub">One Drug · Biomedical Engineering Research Intern · August to September 2026</p>
+        <p><strong>What I did.</strong> At One Drug, I built the second version of the web app for a prototype diagnostic device and a new mobile app. I connected both apps to a Raspberry Pi camera and a temperature sensor. I added checks for dropped connections and invalid readings, then tested the apps before deployment.&nbsp;<sup><a href="#ref-5" aria-label="Reference 5">[5]</a></sup></p>
+        <p><strong>NASA connection.</strong> Perseverance’s PIXL instrument photographs the patch of rock it tests with X-rays. The picture tells scientists where the reading came from. In our apps, I wanted to be just as clear about which device was sending the data on my screen.&nbsp;<sup><a href="#ref-6" aria-label="Reference 6">[6]</a></sup></p>
+      </section>
+      <section id="odontiv" class="project" aria-labelledby="odontiv-heading">
+        <h3 id="odontiv-heading">Odontiv, my dental inventory app</h3>
+        <p class="sub">Published April 2026 · iOS and iPadOS</p>
+        <p><strong>What I did.</strong> I built Odontiv in Swift and SwiftUI so a dental office could track supplies and capture receipts. The app syncs inventory with CloudKit and exports reports with PDFKit. I released it on the App Store in April 2026.&nbsp;<sup><a href="#ref-7" aria-label="Reference 7">[7]</a></sup></p>
+        <p><strong>NASA connection.</strong> NASA Armstrong engineers turn a user’s need into a requirement they can test. For Odontiv, I could start with ten syringes, record using two, and check that eight were left. I’d use the same habit of writing down the expected result before testing an instrument.&nbsp;<sup><a href="#ref-3" aria-label="Reference 3">[3]</a></sup></p>
+        <p class="link"><a href="https://apps.apple.com/us/app/odontiv/id6761696456">View Odontiv on the App Store</a></p>
+      </section>
+    </div>
+    <div class="print-page">
+      <section id="skills" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Technical skills</h2>
+        <ul>
+          <li><strong>Circuit analysis.</strong> In PHYS 141, I use junction and loop rules to follow current and voltage through a circuit. These are the checks I’d start with on a board that isn’t getting power.</li>
+          <li><strong>Linear algebra.</strong> In my honors circuit model, substitution and row reduction both gave 3 V, 2 V, and 1 V. I checked those results against the currents at all three nodes.&nbsp;<sup><a href="#ref-1" aria-label="Reference 1">[1]</a></sup></li>
+          <li><strong>CAD and soldering.</strong> I modeled my lightsaber hilt in FreeCAD, printed it, and soldered the wiring. The switch and wires had to fit alongside the controller.</li>
+          <li><strong>Microcontroller programming.</strong> I programmed the Arduino Nano to read button presses and change the LED sequence. Following a press all the way to the lights helped me debug the controls.</li>
+          <li><strong>Device testing.</strong> At One Drug, I checked device connections and validated incoming readings. That helped me tell whether each app was receiving usable sensor data.</li>
+          <li><strong>Writing testable requirements.</strong> At Beyond the Game Health, I turn event flows into requirements the team can test. A registration only counts when the attendee sees a confirmation and the database saves the signup.</li>
+        </ul>
+      </section>
+      <section id="pathway" aria-labelledby="pathway-heading">
+        <h2 id="pathway-heading">NASA career pathway</h2>
+        <p>The job I looked up on O*NET was electronics engineer. It includes designing circuits, testing them, and explaining the results to other people. A bachelor’s degree is a common route into the field. I’m especially interested in the boards that power sensors and carry their readings back to a computer.&nbsp;<sup><a href="#ref-2" aria-label="Reference 2">[2]</a></sup></p>
+        <h3>Before I transfer</h3>
+        <p>On my next build, I want to keep a short test log. I’ll write down what I expect the circuit to do, measure the supply voltage, and record what actually happens. That would give someone else a way to repeat my test.</p>
+        <h3>Fall 2027 and beyond</h3>
+        <p>I plan to transfer into electrical or computer engineering, study circuits and embedded programming, and design a board I can test myself. For hands-on experience, I’ll look for an instrument or avionics project through NASA’s OSTEM internships. I’ll also check Pathways openings as I work toward an engineering role.&nbsp;<sup><a href="#ref-3" aria-label="Reference 3">[3]</a></sup>&nbsp;<sup><a href="#ref-8" aria-label="Reference 8">[8]</a></sup></p>
+      </section>
+    </div>
+    <div class="print-page">
+      <section id="resume" class="resume" aria-labelledby="resume-heading">
+        <h2 class="rname" aria-label="Résumé of Aditya Dave" id="resume-heading">Aditya Dave</h2>
+        <p class="rcontact"><a href="mailto:realmwonders36@gmail.com">realmwonders36@gmail.com</a> · 510-640-6465 · <a href="https://www.linkedin.com/in/aditya-dave-2b23a8270/">LinkedIn</a> · <a href="https://github.com/AdityaDave2008">GitHub</a></p>
+        <h3>Skills</h3>
+        <p><strong>Embedded systems.</strong> Arduino, Raspberry Pi, ESP32, soldering, 3D printing, FreeCAD.</p>
+        <p><strong>Languages &amp; frameworks.</strong> C++, Python, Swift, SwiftUI, TypeScript, React, Node.js, FastAPI.</p>
+        <p><strong>Software &amp; data.</strong> APIs, MongoDB, Git/GitHub, CloudKit, OpenCV, TensorFlow.js, Amazon Bedrock.</p>
+        <p><strong>Product &amp; design.</strong> Technical product management, data modeling, QA testing, UI/UX design.</p>
+        <h3>Experience</h3>
+        <p class="rrole"><strong>Biomedical Engineering Research Intern (NDA signed)</strong> · One Drug<br><span>Remote · August to September 2026</span></p>
+        <p>Built the second version of a diagnostic prototype’s web app and a new mobile app. Connected Raspberry Pi camera feeds and temperature readings, added connection and data checks, and tested the software before deployment.</p>
+        <p class="rrole"><strong>AI Research Intern, AI &amp; Policy Integration</strong> · ClearPolicy<br><span>Remote · July to October 2026</span></p>
+        <p>Checked 10 California ballot measures against official records and found 3 wrong status labels. Wrote 12 LLM test cases and a report on reasoning, citations, hallucinations, and uncertainty.</p>
+        <p class="rrole"><strong>IT Systems Administrator</strong> · Aspen Dental Care<br><span>Hybrid · September 2026 to present</span></p>
+        <p>Maintain clinic systems, workstations, practice-management software, and the website. Redesigned the site for mobile use and documented patient workflows with privacy in mind.</p>
+        <p class="rrole"><strong>Esports &amp; Product Lead Intern</strong> · Beyond the Game Health<br><span>Remote · August 2026 to present</span></p>
+        <p>Lead planning for BTGH OS. Define requirements and event flows, help design QR check-in and partner reporting, and coordinate development, testing, and deployment.</p>
+        <h3>Projects</h3>
+        <p class="rproject"><strong>NeoPixel Lightsaber Hilt &amp; Electronics System</strong> · June 2026. Designed and printed a modular hilt for an Arduino Nano, NeoPixel strips, and a kill switch. Motion effects are planned.</p>
+        <p class="rproject"><strong><a href="https://apps.apple.com/us/app/odontiv/id6761696456">Odontiv App</a></strong> · April 2026. Shipped an iOS/iPadOS dental inventory app with CloudKit sync, receipt capture, and PDF exports.</p>
+        <p class="rproject"><strong><a href="https://apps.apple.com/us/app/chefs-ledger/id6753956689">Chef’s Ledger App</a></strong> · November 2025. Shipped a culinary inventory and expense app that saved $400 in supply costs through grocery planning and low-stock alerts.</p>
+        <p class="rproject"><strong><a href="https://github.com/AdityaDave2008/ClarityDAHACKS5.0">Clarity (DAHacks5.0)</a></strong> · October 12, 2026. Built a live camera assistant with TensorFlow.js, COCO-SSD, and WebAssembly, a FastAPI backend, and a SwiftUI iOS app with LiDAR depth sensing.</p>
+        <p class="rproject"><strong><a href="https://github.com/AdityaDave2008/RELAY-Sparthill2026">Relay (Sparthacks)</a></strong> · October 24, 2026. Built an emergency communication platform with Swift peer-to-peer relays, QR sync in React and TypeScript, and an AWS backend using Amazon Bedrock.</p>
+        <h3>Certifications</h3>
+        <p>IBM SkillsBuild, Data, IT, Cybersecurity, &amp; AI Foundations<br>LinkedIn Learning, Electronics Foundations</p>
+        <h3>Education</h3>
+        <p><strong>De Anza College &amp; Ohlone College</strong> · June 2026 to present · Expected graduation May 2029<br>Electrical &amp; Computer Engineering transfer student · Dean’s List · GPA 3.92</p>
+      </section>
+    </div>
+    <div class="print-page">
+      <section id="references" aria-labelledby="references-heading">
+        <h2 id="references-heading">References</h2>
+        <p>I used the NCAS guide and sample to organize this portfolio and NASA’s résumé guide to format my experience.&nbsp;<sup><a href="#ref-4" aria-label="Reference 4">[4]</a></sup>&nbsp;<sup><a href="#ref-9" aria-label="Reference 9">[9]</a></sup>&nbsp;<sup><a href="#ref-10" aria-label="Reference 10">[10]</a></sup></p>
+        <p id="ai-use"><strong>AI use disclosure. </strong>I used ChatGPT to help revise the portfolio design and make the website better, I held all originality through all.</p>
+        <div class="refs-list">
+          <p class="ref" id="ref-1"><strong>[1] Aditya Dave.</strong> MATH 2B honors project on nodal analysis and matrices. Working draft, fall 2026.</p>
+          <p class="ref" id="ref-2"><strong>[2] O*NET OnLine.</strong> Electronics Engineers, Except Computer, 17-2072.00.<br><a href="https://www.onetonline.org/link/summary/17-2072.00">https://www.onetonline.org/link/summary/17-2072.00</a></p>
+          <p class="ref" id="ref-3"><strong>[3] NASA Armstrong Flight Research Center.</strong> Vehicle Integration and Instrumentation.<br><a href="https://www.nasa.gov/centers-and-facilities/armstrong/vehicle-integration-and-instrumentation/">https://www.nasa.gov/centers-and-facilities/armstrong/vehicle-integration-and-instrumentation/</a></p>
+          <p class="ref" id="ref-4"><strong>[4] NCAS Student Challenge.</strong> Participant Guide, 2026. Career alignment, portfolio requirements, and scoring, pp. 13–14 and 17–19. Course materials.</p>
+          <p class="ref" id="ref-5"><strong>[5] Aditya Dave.</strong> Résumé. Education, skills, work experience, and engineering projects. Personal document, 2026.</p>
+          <p class="ref" id="ref-6"><strong>[6] NASA Science.</strong> Perseverance Science Instruments. See the PIXL instrument.<br><a href="https://science.nasa.gov/mission/mars-2020-perseverance/science-instruments/">https://science.nasa.gov/mission/mars-2020-perseverance/science-instruments/</a></p>
+          <p class="ref" id="ref-7"><strong>[7] Aditya Dave.</strong> Odontiv. Apple App Store listing.<br><a href="https://apps.apple.com/us/app/odontiv/id6761696456">https://apps.apple.com/us/app/odontiv/id6761696456</a></p>
+          <p class="ref" id="ref-8"><strong>[8] NASA.</strong> NASA Internship Programs. OSTEM and Pathways.<br><a href="https://www.nasa.gov/learning-resources/internship-programs/">https://www.nasa.gov/learning-resources/internship-programs/</a></p>
+          <p class="ref" id="ref-9"><strong>[9] Institute of Competition Sciences.</strong> NCAS sample career portfolio.<br><a href="https://sites.google.com/competitionsciences.org/ncasexample/home">https://sites.google.com/competitionsciences.org/ncasexample/home</a></p>
+          <p class="ref" id="ref-10"><strong>[10] NASA.</strong> Resume Tips to Launch Your NASA Career!<br><a href="https://www.nasa.gov/wp-content/uploads/2023/06/nasa-resume-tips-brochure.pdf">https://www.nasa.gov/wp-content/uploads/2023/06/nasa-resume-tips-brochure.pdf</a></p>
+        </div>
+      </section>
+    </div>
+  </main>
+</div>
+<script>
+  const printButton = document.getElementById("print");
+  printButton.hidden = false;
+  printButton.addEventListener("click", () => window.print());
+
+  const links = Array.from(document.querySelectorAll("nav a"));
+  function markSection() {
+    const past = links.filter(link => document.querySelector(link.hash).getBoundingClientRect().top <= 120);
+    const atEnd = window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2;
+    const current = atEnd ? links[links.length - 1] : past[past.length - 1];
+    for (const link of links) {
+      if (link === current) link.setAttribute("aria-current", "location");
+      else link.removeAttribute("aria-current");
+    }
+  }
+  window.addEventListener("scroll", markSection, { passive: true });
+  window.addEventListener("resize", markSection);
+  markSection();
+</script>
+</body>
+</html>
